@@ -14,7 +14,10 @@ function clickHandler() {
 
     fetch(getTranslationUrl(user_input))
         .then(response => response.json())
-        .then(json => console.log(json.contents.translated))
+        .then(json => {
+            var transText = json.contents.translated;
+            output.innerHTML = transText;
+        })
 };
 
 buttonAction.addEventListener("click", clickHandler)
