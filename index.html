@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Quiz</title>
     <style>
-        textarea{
+        textarea {
             margin: 1rem;
-            height : 10vh;   
-            width : 50%;
-            display : block;
-            padding : 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            height: 10vh;
+            width: 50%;
+            display: block;
+            padding: 1rem;
         }
-        body{
+
+        body {
             margin: 0px;
         }
-        .headerbar{
+
+        .headerbar {
             background-color: yellow;
             height: 8vh;
             font-weight: bold;
             font-size: 3rem;
             text-align: center;
         }
-    </style> 
+
+        button {
+            background-color: yellow;
+            border: none;
+            margin: 1rem 0rem;
+            padding: 1rem 2rem;
+            font-family: 'Kalam', cursive;
+            font-size: large;
+            position: absolute;
+            left: 40%;
+
+        }
+    </style>
 </head>
+
 <body>
     <div class="headerbar"> Banana Talk </div>
-    <textarea placeholder="Enter message"> </textarea>
-    <button id="btn"> Translate </button>
-    <script src="app.js" type="text/javascript"> </script> 
+    <textarea id="translate-input"
+        placeholder="Put your message here which you want to convert to banana language"></textarea>
+    <button id="translate-button"> Translate To Banana</button>
+    <!-- <script src="app.js" type="text/javascript"> </script> -->
 </body>
+
 </html>
